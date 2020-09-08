@@ -4,7 +4,7 @@
 
 def sum arr
   # YOUR CODE HERE
-  arr.inject(0,:+)
+  arr.reduce(0,:+)
 end
 
 def max_2_sum arr
@@ -15,7 +15,7 @@ end
 def sum_to_n? arr, n
   # YOUR CODE HERE
   while num=arr.pop do
-  return true if arr.member?(n-num)
+    return true if arr.member?(n-num)
   end
   return false
 end
